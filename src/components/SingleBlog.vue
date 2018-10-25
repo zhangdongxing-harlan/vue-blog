@@ -23,7 +23,6 @@ export default {
   },
   created() {
     const query = Bmob.Query("Blog_Article");
-    console.log(this.id.objectId);
     query.get(this.id.objectId).then(res => {
       this.blog=res;
     });
